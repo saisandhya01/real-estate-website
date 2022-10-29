@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function SinglePropertyCard() {
+export default function SinglePropertyCard(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -17,17 +17,24 @@ export default function SinglePropertyCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Property card
+          {props.details.name}
+        </Typography>
+        <Typography gutterBottom variant="h6" component="div">
+          {props.details.location}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-                  There has to be enough content for this card. That is why I am writing this.
-                  Hey there! This is Sai Sandhya and I have no idea what I am doing.
+              {props.details.address}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+              Price : {`$${props.details.price}k`}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+              Squarefeet : {`${props.details.squarefeet}m3`}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+              Property type : {props.details.property}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }

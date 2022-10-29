@@ -40,59 +40,79 @@ const propertyTypes = [
   
 const prices = [
     {
-      value: '80k - 100k',
-      label: '80-100',
+      label: '$80k - $100k',
+      value: '80-100',
     },
     {
-      value: '101k - 300k',
-      label: '101-300',
+      label: '$101k - $300k',
+      value: '101-300',
     },
     {
-      value: '301k - 500k',
-      label: '301-500',
+      label: '$301k - $500k',
+      value: '301-500',
     },
     {
-      value: '501k - 1M',
-      label: '501-1000',
+      label: '$501k - $1M',
+      value: '501-1000',
     },
 ];
 const squarefeetdata = [
     {
-      value: '< 2 m3',
-      label: '<2m3',
+      label: '< 2 m3',
+      value: '0-1',
     },
     {
-        value: '2 - 5 m3',
-        label: '2-5m3'
+        label: '2 - 5 m3',
+        value: '2-5'
     },
     {
-        value: '> 5 m3',
-        label: '>5m3'
+        label: '> 5 m3',
+        value: '6-20'
     }
-  ];
+];
+  
+const def = {
+  location: '',
+  minPrice: -100,
+  maxPrice: 50000,
+  minArea: -1,
+  maxArea: 50,
+  squarefeet: '',
+  propertyType : ''
+}
 
 const Filter = () => {
     const [location, setLocation] = React.useState('');
-    const [price, setPrice] = React.useState('');
+  const [price, setPrice] = React.useState('');
+  const [minPrice, setMinPrice] = React.useState(-100);
+  const [maxPrice, setMaxPrice] = React.useState(50000);
+  const [minArea, setMinArea] = React.useState(-1);
+  const [maxArea, setMaxArea] = React.useState(50);
     const [squarefeet, setSquarefeet] = React.useState('');
     const [propertyType, setPropertyType] = React.useState('');
-    const [submittedData, setSubmittedData] = React.useState({});
+    const [submittedData, setSubmittedData] = React.useState(def);
 
   const handleChangeLocation = (event) => {
     setLocation(event.target.value);
   };
   const handleChangePrice = (event) => {
+    const priceArray = event.target.value.split("-");
+    setMinPrice(priceArray[0]);
+    setMaxPrice(priceArray[1]);
     setPrice(event.target.value);
     };
     const handleChangePropertyType = (event) => {
       setPropertyType(event.target.value);
     }
-    const handleChangeSquareFeet = (event) => {
-        setSquarefeet(event.target.value);
+  const handleChangeSquareFeet = (event) => {
+    const areaArray = event.target.value.split("-");
+    setMinArea(areaArray[0]);
+    setMaxArea(areaArray[1]);
+    setSquarefeet(event.target.value);
     }
 
     const handleSubmit = () => {
-        setSubmittedData({ location, price, squarefeet, propertyType });
+        setSubmittedData({ location, minPrice, maxPrice, minArea, maxArea, squarefeet, propertyType });
     }
 
     return (

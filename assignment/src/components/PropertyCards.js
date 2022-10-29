@@ -15,37 +15,29 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 function PropertyCards(props) {
-  function isEmpty(obj) {
-    return Object.keys(obj).length === 0;
-}
     return (
-      <div>{
-        !isEmpty(props.filters) &&
         <div>
         Applied filters are:
             <div>Location: {props.filters.location}</div>
-            <div>Price: {props.filters.price}</div>
+          <div>Min Price: {props.filters.minPrice}</div>
+          <div>Max Price: {props.filters.maxPrice}</div>
             <div>PropertyType: {props.filters.propertyType}</div>
-          <div>Square feet : {props.filters.squarefeet}</div>
-          { 
+          <div>Min area : {props.filters.minArea}</div>
+          <div>Max area : {props.filters.maxArea}</div>
+          <Box sx={{ flexGrow: 1 }}>
+           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+          {
             Properties.filter(el => ((el.location !== props.filters.location && props.filters.location === "") || el.location === props.filters.location)
-            && ( (el.property !== props.filters.propertyType && props.filters.propertyType === "")  || el.property === props.filters.propertyType)).map(filteredProperty => (
-              <li>
-                {filteredProperty.location}
-              </li>
-            ))
-          }
-        </div>
-      }
-            <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-        {Array.from(Array(15)).map((_, index) => (
-          <Grid item xs={2} sm={4} md={4} key={index}>
-           <SinglePropertyCard /> 
+              && ((el.property !== props.filters.propertyType && props.filters.propertyType === "") || el.property === props.filters.propertyType)
+              && (el.price >= props.filters.minPrice && el.price <= props.filters.maxPrice)
+              && (el.squarefeet >= props.filters.minArea && el.squarefeet <= props.filters.maxArea)
+            ).map(filteredProperty => (
+              <Grid item xs={2} sm={4} md={4} key={filteredProperty.id}>
+                <SinglePropertyCard key={filteredProperty.id} details={filteredProperty} />
+             </Grid>
+                ))}
           </Grid>
-        ))}
-      </Grid>
-    </Box>
+          </Box>
         </div>
     );
 }
