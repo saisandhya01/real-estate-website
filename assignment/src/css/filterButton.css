@@ -1,0 +1,13 @@
+.filter-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.parent-container {
+  margin: 0 auto;
+}
+.property-cards {
+  margin: 30px auto 0px auto;
+}
