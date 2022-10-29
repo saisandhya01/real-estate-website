@@ -3,6 +3,7 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Properties from '../dummydata/properties.json';
 import SinglePropertyCard from './SinglePropertyCard';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -25,11 +26,19 @@ function PropertyCards(props) {
             <div>Location: {props.filters.location}</div>
             <div>Price: {props.filters.price}</div>
             <div>PropertyType: {props.filters.propertyType}</div>
-            <div>Square feet : {props.filters.squarefeet}</div>
+          <div>Square feet : {props.filters.squarefeet}</div>
+          { 
+            Properties.filter(el => ((el.location !== props.filters.location && props.filters.location === "") || el.location === props.filters.location)
+            && ( (el.property !== props.filters.propertyType && props.filters.propertyType === "")  || el.property === props.filters.propertyType)).map(filteredProperty => (
+              <li>
+                {filteredProperty.location}
+              </li>
+            ))
+          }
         </div>
       }
             <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+          <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {Array.from(Array(15)).map((_, index) => (
           <Grid item xs={2} sm={4} md={4} key={index}>
            <SinglePropertyCard /> 

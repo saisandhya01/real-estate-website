@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Bangalore",
+        "price" : 100, 
+        "squarefeet": 3, 
+        "property" : "Land"
+    }, 
+    {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Bangalore",
+        "price" : 80, 
+        "squarefeet": 9, 
+        "property" : "Land"
+    }, 
+    {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Bangalore",
+        "price" : 75, 
+        "squarefeet": 6, 
+        "property" : "Land"
+    }, {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Bangalore",
+        "price" : 305, 
+        "squarefeet": 12, 
+        "property" : "Land"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Mumbai",
+        "price" : 600, 
+        "squarefeet": 8, 
+        "property" : "Land"
+    }, {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Mumbai",
+        "price" : 999, 
+        "squarefeet": 7, 
+        "property" : "House"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Mumbai",
+        "price" : 650, 
+        "squarefeet": 6, 
+        "property" : "House"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Mumbai",
+        "price" : 1000, 
+        "squarefeet": 5, 
+        "property" : "House"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Delhi",
+        "price" : 269, 
+        "squarefeet": 4, 
+        "property" : "House"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Delhi",
+        "price" : 98, 
+        "squarefeet": 2, 
+        "property" : "House"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Delhi",
+        "price" : 560, 
+        "squarefeet": 3, 
+        "property" : "Land"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Delhi",
+        "price" : 100, 
+        "squarefeet": 4, 
+        "property" : "Apartment"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Delhi",
+        "price" : 100, 
+        "squarefeet": 5, 
+        "property" : "Apartment"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Hyderabad",
+        "price" : 150, 
+        "squarefeet": 6, 
+        "property" : "Apartment"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Hyderabad",
+        "price" : 890, 
+        "squarefeet": 7, 
+        "property" : "Apartment"
+    },  {
+        "name": "Bonny villa", 
+        "address": "78 McCartney, Toronto",
+        "location": "Hyderabad",
+        "price" : 360, 
+        "squarefeet": 8, 
+        "property" : "Apartment"
+    }
+]
