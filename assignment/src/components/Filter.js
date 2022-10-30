@@ -22,6 +22,10 @@ const locations = [
     value: "Delhi",
     label: "Delhi",
   },
+  {
+    value: "",
+    label: "*Reset*",
+  },
 ];
 
 const propertyTypes = [
@@ -36,6 +40,10 @@ const propertyTypes = [
   {
     value: "Apartment",
     label: "Apartment",
+  },
+  {
+    value: "",
+    label: "*Reset*",
   },
 ];
 
@@ -56,6 +64,10 @@ const prices = [
     label: "$501k - $1M",
     value: "501-1000",
   },
+  {
+    value: "",
+    label: "*Reset*",
+  },
 ];
 const squarefeetdata = [
   {
@@ -69,6 +81,10 @@ const squarefeetdata = [
   {
     label: "> 5 m3",
     value: "6-20",
+  },
+  {
+    value: "",
+    label: "*Reset*",
   },
 ];
 
@@ -97,18 +113,28 @@ const Filter = () => {
     setLocation(event.target.value);
   };
   const handleChangePrice = (event) => {
-    const priceArray = event.target.value.split("-");
-    setMinPrice(priceArray[0]);
-    setMaxPrice(priceArray[1]);
+    if (event.target.value === "") {
+      setMinPrice(def.minPrice);
+      setMaxPrice(def.maxPrice);
+    } else {
+      const priceArray = event.target.value.split("-");
+      setMinPrice(priceArray[0]);
+      setMaxPrice(priceArray[1]);
+    }
     setPrice(event.target.value);
   };
   const handleChangePropertyType = (event) => {
     setPropertyType(event.target.value);
   };
   const handleChangeSquareFeet = (event) => {
-    const areaArray = event.target.value.split("-");
-    setMinArea(areaArray[0]);
-    setMaxArea(areaArray[1]);
+    if (event.target.value === "") {
+      setMinArea(def.minArea);
+      setMaxArea(def.maxArea);
+    } else {
+      const areaArray = event.target.value.split("-");
+      setMinArea(areaArray[0]);
+      setMaxArea(areaArray[1]);
+    }
     setSquarefeet(event.target.value);
   };
 

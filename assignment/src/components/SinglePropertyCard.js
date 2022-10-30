@@ -11,7 +11,7 @@ export default function SinglePropertyCard({ details }) {
         <CardMedia
           component="img"
           height="140"
-          image={require("../assets/sample_image.jpg")}
+          image={require(`../assets/${details.image}`)}
           alt="sample property"
         />
         <CardContent>

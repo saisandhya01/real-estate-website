@@ -1,133 +1,302 @@
 [
-    {
-        "id": 1,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Bangalore",
-        "price" : 100, 
-        "squarefeet": 3, 
-        "property" : "Land"
-    }, 
-    {
-        "id": 2,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Bangalore",
-        "price" : 80, 
-        "squarefeet": 9, 
-        "property" : "Land"
-    }, 
-    {
-        "id": 3,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Bangalore",
-        "price" : 95, 
-        "squarefeet": 6, 
-        "property" : "Land"
-    }, {
-        "id": 4,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Bangalore",
-        "price" : 305, 
-        "squarefeet": 12, 
-        "property" : "Land"
-    },  {
-        "id": 5,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Mumbai",
-        "price" : 600, 
-        "squarefeet": 8, 
-        "property" : "Land"
-    }, {
-        "id": 6,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Mumbai",
-        "price" : 999, 
-        "squarefeet": 7, 
-        "property" : "House"
-    },  {
-        "id": 7,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Mumbai",
-        "price" : 650, 
-        "squarefeet": 6, 
-        "property" : "House"
-    },  {
-        "id": 8,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Mumbai",
-        "price" : 1000, 
-        "squarefeet": 5, 
-        "property" : "House"
-    },  {
-        "id": 9,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Delhi",
-        "price" : 269, 
-        "squarefeet": 4, 
-        "property" : "House"
-    },  {
-        "id": 10,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Delhi",
-        "price" : 98, 
-        "squarefeet": 2, 
-        "property" : "House"
-    },  {
-        "id": 11,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Delhi",
-        "price" : 560, 
-        "squarefeet": 3, 
-        "property" : "Land"
-    },  {
-        "id": 12,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Delhi",
-        "price" : 100, 
-        "squarefeet": 4, 
-        "property" : "Apartment"
-    },  {
-        "id": 13,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Delhi",
-        "price" : 100, 
-        "squarefeet": 5, 
-        "property" : "Apartment"
-    },  {
-        "id": 14,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Hyderabad",
-        "price" : 150, 
-        "squarefeet": 6, 
-        "property" : "Apartment"
-    },  {
-        "id": 15,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Hyderabad",
-        "price" : 890, 
-        "squarefeet": 7, 
-        "property" : "Apartment"
-    },  {
-        "id": 16,
-        "name": "Bonny villa", 
-        "address": "78 McCartney, Toronto",
-        "location": "Hyderabad",
-        "price" : 360, 
-        "squarefeet": 8, 
-        "property" : "Apartment"
-    }
+  {
+    "id": 1,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Bangalore",
+    "price": 100,
+    "squarefeet": 3,
+    "property": "Land",
+    "image": "image1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Indiranagar paradise",
+    "address": "78 McCartney, Toronto",
+    "location": "Bangalore",
+    "price": 80,
+    "squarefeet": 9,
+    "property": "Land",
+    "image": "image1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Namma illam",
+    "address": "78 McCartney, Toronto",
+    "location": "Bangalore",
+    "price": 95,
+    "squarefeet": 6,
+    "property": "Land",
+    "image": "image1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Bangalore",
+    "price": 305,
+    "squarefeet": 12,
+    "property": "Land",
+    "image": "image6.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Mumbai",
+    "price": 600,
+    "squarefeet": 8,
+    "property": "Land",
+    "image": "image5.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Anderi ki bhoot",
+    "address": "78 McCartney, Toronto",
+    "location": "Mumbai",
+    "price": 999,
+    "squarefeet": 7,
+    "property": "House",
+    "image": "image4.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Poes garden",
+    "address": "78 McCartney, Toronto",
+    "location": "Mumbai",
+    "price": 650,
+    "squarefeet": 6,
+    "property": "House",
+    "image": "image3.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Mumbai",
+    "price": 1000,
+    "squarefeet": 5,
+    "property": "House",
+    "image": "image2.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Delhi",
+    "price": 269,
+    "squarefeet": 4,
+    "property": "House",
+    "image": "image2.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Eden gardens",
+    "address": "78 McCartney, Toronto",
+    "location": "Delhi",
+    "price": 98,
+    "squarefeet": 2,
+    "property": "House",
+    "image": "image3.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Delhi",
+    "price": 560,
+    "squarefeet": 3,
+    "property": "Land",
+    "image": "image4.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Camouflage",
+    "address": "78 McCartney, Toronto",
+    "location": "Delhi",
+    "price": 100,
+    "squarefeet": 4,
+    "property": "Apartment",
+    "image": "image5.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Delhi",
+    "price": 100,
+    "squarefeet": 5,
+    "property": "Apartment",
+    "image": "image6.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Hyderabad",
+    "price": 150,
+    "squarefeet": 6,
+    "property": "Apartment",
+    "image": "image2.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Hyderabad",
+    "price": 890,
+    "squarefeet": 7,
+    "property": "Apartment",
+    "image": "image3.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Bonny villa",
+    "address": "78 McCartney, Toronto",
+    "location": "Hyderabad",
+    "price": 360,
+    "squarefeet": 8,
+    "property": "Apartment",
+    "image": "image4.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Noor jahan house",
+    "address": "78 street, hyderabd",
+    "location": "Hyderabad",
+    "price": 90,
+    "squarefeet": 4,
+    "property": "House",
+    "image": "image5.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Noor jahan palace",
+    "address": "79 street, hyderabd",
+    "location": "Hyderabad",
+    "price": 90,
+    "squarefeet": 4,
+    "property": "Land",
+    "image": "image6.jpeg"
+  },
+  {
+    "id": 19,
+    "name": "Noor jahan resort",
+    "address": "80 street, hyderabd",
+    "location": "Hyderabad",
+    "price": 390,
+    "squarefeet": 1,
+    "property": "House",
+    "image": "image3.jpeg"
+  },
+  {
+    "id": 20,
+    "name": "Koramangala towers",
+    "address": "78 McCartney, Toronto",
+    "location": "Bangalore",
+    "price": 380,
+    "squarefeet": 3,
+    "property": "Land",
+    "image": "image6.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "domlur flyover buildings",
+    "address": "78 McCartney, Bangalore",
+    "location": "Bangalore",
+    "price": 650,
+    "squarefeet": 4,
+    "property": "House",
+    "image": "image5.jpeg"
+  },
+  {
+    "id": 22,
+    "name": "domlur flyover apartments",
+    "address": "78 McCartney, Bangalore",
+    "location": "Bangalore",
+    "price": 850,
+    "squarefeet": 5,
+    "property": "Apartment",
+    "image": "image4.jpeg"
+  },
+  {
+    "id": 23,
+    "name": "sarjoni apartments",
+    "address": "78 McCartney, Bangalore",
+    "location": "Mumbai",
+    "price": 450,
+    "squarefeet": 6,
+    "property": "Apartment",
+    "image": "image5.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "doddakamanhali apartments",
+    "address": "78 McCartney, Bangalore",
+    "location": "Bangalore",
+    "price": 450,
+    "squarefeet": 6,
+    "property": "Apartment",
+    "image": "image6.jpeg"
+  },
+  {
+    "id": 25,
+    "name": "cantonment",
+    "address": "80 street, mumbai",
+    "location": "Mumbai",
+    "price": 250,
+    "squarefeet": 1,
+    "property": "House",
+    "image": "image1.jpg"
+  },
+  {
+    "id": 26,
+    "name": "rajh gadh",
+    "address": "85 street, delhi",
+    "location": "Mumbai",
+    "price": 650,
+    "squarefeet": 1,
+    "property": "House",
+    "image": "image3.jpeg"
+  },
+  {
+    "id": 27,
+    "name": "cp place",
+    "address": "85 street, delhi",
+    "location": "Delhi",
+    "price": 950,
+    "squarefeet": 6,
+    "property": "House",
+    "image": "image4.jpeg"
+  },
+  {
+    "id": 28,
+    "name": "raj court homes",
+    "address": "85 street, mumbai",
+    "location": "Mumbai",
+    "price": 444,
+    "squarefeet": 1,
+    "property": "House",
+    "image": "image5.jpeg"
+  },
+  {
+    "id": 29,
+    "name": "nutanix homes",
+    "address": "85 street, hyd",
+    "location": "Hyderabad",
+    "price": 890,
+    "squarefeet": 1,
+    "property": "House",
+    "image": "image2.jpeg"
+  },
+  {
+    "id": 30,
+    "name": "church street homes",
+    "address": "85 street, blr",
+    "location": "Bangalore",
+    "price": 346,
+    "squarefeet": 1,
+    "property": "Apartment",
+    "image": "image4.jpeg"
+  }
 ]
