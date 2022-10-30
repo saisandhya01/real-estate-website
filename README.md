@@ -14,7 +14,7 @@ Single page real estate landing page (Rent a Property) with filtering mechanisms
 - Property type
 - Square feet of the property
 
-# How to start the App
+## How to start the App
 
 In terminal, type
 
