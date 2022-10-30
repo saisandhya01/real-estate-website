@@ -14,7 +14,37 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function PropertyCards(props) {
+function PropertyCards({ filters }) {
+  const renderData = (filters) => {
+    const filteredProperties = Properties.filter(
+      (el) =>
+        ((el.location !== filters.location && filters.location === "") ||
+          el.location === filters.location) &&
+        ((el.property !== filters.propertyType &&
+          filters.propertyType === "") ||
+          el.property === filters.propertyType) &&
+        el.price >= filters.minPrice &&
+        el.price <= filters.maxPrice &&
+        el.squarefeet >= filters.minArea &&
+        el.squarefeet <= filters.maxArea
+    );
+
+    if (filteredProperties.length === 0) {
+      return (
+        <div className="no-filters">
+          <h1>No properties found for the above filters.</h1>
+        </div>
+      );
+    }
+    return filteredProperties.map((filteredProperty) => (
+      <Grid item xs={2} sm={4} md={4} key={filteredProperty.id}>
+        <SinglePropertyCard
+          key={filteredProperty.id}
+          details={filteredProperty}
+        />
+      </Grid>
+    ));
+  };
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
@@ -23,18 +53,18 @@ function PropertyCards(props) {
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          {Properties.filter(
+          {renderData(filters)}
+          {/*Properties.filter(
             (el) =>
-              ((el.location !== props.filters.location &&
-                props.filters.location === "") ||
-                el.location === props.filters.location) &&
-              ((el.property !== props.filters.propertyType &&
-                props.filters.propertyType === "") ||
-                el.property === props.filters.propertyType) &&
-              el.price >= props.filters.minPrice &&
-              el.price <= props.filters.maxPrice &&
-              el.squarefeet >= props.filters.minArea &&
-              el.squarefeet <= props.filters.maxArea
+              ((el.location !== filters.location && filters.location === "") ||
+                el.location === filters.location) &&
+              ((el.property !== filters.propertyType &&
+                filters.propertyType === "") ||
+                el.property === filters.propertyType) &&
+              el.price >= filters.minPrice &&
+              el.price <= filters.maxPrice &&
+              el.squarefeet >= filters.minArea &&
+              el.squarefeet <= filters.maxArea
           ).map((filteredProperty) => (
             <Grid item xs={2} sm={4} md={4} key={filteredProperty.id}>
               <SinglePropertyCard
@@ -42,7 +72,7 @@ function PropertyCards(props) {
                 details={filteredProperty}
               />
             </Grid>
-          ))}
+          ))*/}
         </Grid>
       </Box>
     </div>

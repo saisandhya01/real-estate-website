@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.carddiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+.carddiv > div {
+  width: 70rem;
+}
+.no-filters {
+  margin-left: 100px;
+}
